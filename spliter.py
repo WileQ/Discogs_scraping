@@ -6,6 +6,7 @@ def split_file(input_file, n):
     base = total_lines // n
     extra = total_lines % n
 
+    print(total_lines)
     start = 0
     for i in range(n):
         end = start + base + (1 if i < extra else 0)
@@ -15,4 +16,4 @@ def split_file(input_file, n):
 
 
 # usage
-split_file("ids_todo_wiktor.txt", 5)
+split_file("ids_todo_wiktor.txt", 2)
