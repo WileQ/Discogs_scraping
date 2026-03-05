@@ -10,10 +10,10 @@ def split_file(input_file, n):
     start = 0
     for i in range(n):
         end = start + base + (1 if i < extra else 0)
-        with open(f"ids_todo_worker{i+1}.txt", "w", encoding="utf-8") as out:
+        with open(f"ids_todo_worker{i+1}v2.txt", "w", encoding="utf-8") as out:
             out.writelines(lines[start:end])
         start = end
 
 
 # usage
-split_file("ids_todo_wiktor.txt", 2)
+split_file("ids_todo_wiktorv2.txt", 2)
